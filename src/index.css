@@ -7,7 +7,89 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mainTitle {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+.resources {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.resources dl {
+  display: inline-flex;
+  padding: 1rem 3rem 1rem 0;
+  margin: 1rem auto;
+  justify-content: center;
+  background-color: rgba(180, 180, 50, 0.4);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.resources dt {
+  font-weight: bold;
+  margin-left: 3rem;
+}
+
+.resources dd {
+  padding-left: 1rem;
+  margin: 0;
+}
+
+
+.robots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.robotCard {
+  margin: 0 0.5rem 1rem;
+  width: calc((100% - 4rem) / 4);
+  min-width: 300px;
+  background-color: rgba(50, 180, 50, 0.4);
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  padding: 1rem 0.5rem;
+}
+
+.robotCard.robotCard--idle {
+  background-color: rgba(180, 50, 50, 0.4);
+}
+
+.robotCard .title {
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+.robotCard dl {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.robotCard dt, .robotCard dd {
+  width: 50%;
+  margin: 10px 0 0;
+}
+
+.robotCard dt {
+  text-align: left;
+  width: 30%;
+  font-weight: bold;
+}
+
+.robotCard dd {
+  width: 70%;
+  text-align: left;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
 }
